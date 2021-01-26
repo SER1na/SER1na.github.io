@@ -1,0 +1,190 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>使用eclipse提交到GitHub | Gridea</title>
+<link rel="shortcut icon" href="https://SER1na.github.io/favicon.ico?v=1611636682679">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://SER1na.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="使用eclipse提交到GitHub | Gridea - Atom Feed" href="https://SER1na.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="一、GITHub创建一个新的repository (Start a project)，复制地址备用。https://github.com/xxxx/TestDemo.git
+注：红色标识部分不要勾选，否则后续提交代码时会出现冲突。
+
+二、E..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://SER1na.github.io">
+  <img class="avatar" src="https://SER1na.github.io/images/avatar.png?v=1611636682679" alt="">
+  </a>
+  <h1 class="site-title">
+    Gridea
+  </h1>
+  <p class="site-description">
+    温故而知新
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              使用eclipse提交到GitHub
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-01-26
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>一、GITHub创建一个新的repository (Start a project)，复制地址备用。https://github.com/xxxx/TestDemo.git</p>
+<p>注：红色标识部分不要勾选，否则后续提交代码时会出现冲突。<br>
+<img src="https://SER1na.github.io/post-images/1611634828133.png" alt="" loading="lazy"></p>
+<p>二、Eclipse：需要先通过Commit 传到本地仓库，然后再从本地仓库push到Git。<br>
+注：Eclipse 高级版本自带Git，不需要安装插件。（如使用低级版本需安装Git插件）。</p>
+<p>1、右键项目， Team -&gt; Share Project（共享项目）。<br>
+<img src="https://SER1na.github.io/post-images/1611635609827.png" alt="" loading="lazy"><br>
+2、勾选上面的，之后Creat  Repository，确认选中git。<br>
+<img src="https://SER1na.github.io/post-images/1611635612264.png" alt="" loading="lazy"><br>
+在此目录下会生成一个.git 的文件夹， 此时Eclipse中文件显示？号。</p>
+<p>3、为新建的文件添加Index， 右键项目-＞Team-&gt;Add to Index, 这里将所有文件会带个+号， 对于不需要提交的文件，可以通过右键-&gt;Team-&gt;Remove from Index 移除。</p>
+<p>4、首先提交代码到本地仓库<br>
+右键项目-&gt;Team-&gt;Commit,  add commit message, 如果遇到下面这种情况，先去Window-&gt;Preference-&gt;Team-&gt;Git-&gt;Committing, 将第一个默认勾选去掉。<br>
+<img src="https://SER1na.github.io/post-images/1611635888376.png" alt="" loading="lazy"></p>
+<p>5、从本地代码提交到Git：项目右键，Team-&gt;Remote-&gt;Push；<br>
+<img src="https://SER1na.github.io/post-images/1611636146814.png" alt="" loading="lazy"><br>
+输入Git地址，一般下面的都自动填好了；<br>
+<img src="https://SER1na.github.io/post-images/1611636347536.png" alt="" loading="lazy"><br>
+点击Next，Source ref和Destination ref下拉框中选择master，点击Add Spec，点击next，上传成功。</p>
+<p>参考文章：<br>
+http://blog.csdn.net/u014079773/article/details/51595127<br>
+http://blog.csdn.net/u014079773/article/details/51602344<br>
+https://blog.csdn.net/bendanany/article/details/78891804</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://SER1na.github.io/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://SER1na.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
